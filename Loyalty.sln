@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoyaltyAPI", "LoyaltyAPI\LoyaltyAPI.csproj", "{0F237AF5-643F-437E-AC22-07B2700377AD}"
+	ProjectSection(ProjectDependencies) = postProject
+		{CF822A0B-2D05-42FC-B7DD-A40D99415BAF} = {CF822A0B-2D05-42FC-B7DD-A40D99415BAF}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoyaltyModels", "LoyaltyModels\LoyaltyModels.csproj", "{8FA89DA0-AA04-4932-9D1A-CCCFEC555111}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoyaltyServices", "LoyaltyServices\LoyaltyServices.csproj", "{CF822A0B-2D05-42FC-B7DD-A40D99415BAF}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8FA89DA0-AA04-4932-9D1A-CCCFEC555111} = {8FA89DA0-AA04-4932-9D1A-CCCFEC555111}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoyaltyShared", "LoyaltyShared\LoyaltyShared.csproj", "{97ACADFE-0AEE-4BB3-BF0B-343F110E3862}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoyaltyAPITest", "LoyaltyAPITest\LoyaltyAPITest.csproj", "{7E15786A-BB1B-4167-8CFE-37E6593718A5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0F237AF5-643F-437E-AC22-07B2700377AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F237AF5-643F-437E-AC22-07B2700377AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F237AF5-643F-437E-AC22-07B2700377AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F237AF5-643F-437E-AC22-07B2700377AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FA89DA0-AA04-4932-9D1A-CCCFEC555111}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FA89DA0-AA04-4932-9D1A-CCCFEC555111}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FA89DA0-AA04-4932-9D1A-CCCFEC555111}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FA89DA0-AA04-4932-9D1A-CCCFEC555111}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF822A0B-2D05-42FC-B7DD-A40D99415BAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF822A0B-2D05-42FC-B7DD-A40D99415BAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF822A0B-2D05-42FC-B7DD-A40D99415BAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF822A0B-2D05-42FC-B7DD-A40D99415BAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97ACADFE-0AEE-4BB3-BF0B-343F110E3862}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97ACADFE-0AEE-4BB3-BF0B-343F110E3862}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97ACADFE-0AEE-4BB3-BF0B-343F110E3862}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97ACADFE-0AEE-4BB3-BF0B-343F110E3862}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E15786A-BB1B-4167-8CFE-37E6593718A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E15786A-BB1B-4167-8CFE-37E6593718A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E15786A-BB1B-4167-8CFE-37E6593718A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E15786A-BB1B-4167-8CFE-37E6593718A5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D6302FF1-76D6-4552-A89A-F3FC2E532B0F}
+	EndGlobalSection
+EndGlobal

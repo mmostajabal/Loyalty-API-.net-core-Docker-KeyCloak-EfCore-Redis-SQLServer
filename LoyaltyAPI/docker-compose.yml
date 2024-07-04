@@ -1,0 +1,47 @@
+﻿
+
+version: '3.4'
+
+services:
+  loyaltyapi:
+    image: loyaltyapi
+    build:
+      context: ..
+      dockerfile: LoyaltyAPI/Dockerfile
+    ports:      
+      - "5000:8080" # Map container port 8080 to host port 5000
+      - "5001:8081" # Map container port 8081 to host port 5001
+    depends_on:
+      - mssql
+      - redis
+      - keycloak
+    environment:
+      - ConnectionStrings__DefaultConnection=Server=loyaltyapi-mssql-1,1433;Database=LoyaltyDb;User=sa;Password=SA@rh#524LQS;TrustServerCertificate=True;
+      - RedisConnection=redis:6379
+    command: bash -c "dotnet ef database update --project ../LoyaltyServices/LoyaltyServices.csproj --startup-project LoyaltyAPI/LoyaltyAPI.csproj && dotnet LoyaltyAPI.dll"
+  mssql:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    environment:
+      SA_PASSWORD: "SA@rh#524LQS"
+      ACCEPT_EULA: "Y"
+    ports:
+      - "1433:1433"
+  redis:
+    image: "redis:latest"
+    ports:
+      - "6379:6379"
+  keycloak:
+    image: quay.io/keycloak/keycloak:latest
+    command: ["start-dev"]
+    environment:
+      KEYCLOAK_USER: admin
+      KEYCLOAK_PASSWORD: admin
+      KEYCLOAK_ADMIN: admin
+      KEYCLOAK_ADMIN_PASSWORD: admin
+      KC_TRANSACTION_XA_ENABLED: false
+      KC_HOSTNAME_STRICT: 'false'
+      KC_HTTP_ENABLED: 'true'
+      KC_LOG_LEVEL: INFO
+    ports:
+      - 8080:8080
+    
