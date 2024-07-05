@@ -36,7 +36,7 @@ This project is a simple loyalty system API developed using .NET Core. It allows
 Conection String to Connect the database
 
 "ConnectionStrings": {
-    "DefaultConnection": "Server=host.docker.internal;Database=LoyaltyDb;User ID=sa;Password=SA@rh#524LQS;TrustServerCertificate=True;",
+    "DefaultConnection": "Server=host.docker.internal;Database=LoyaltyDb;User ID=sa;Password=XXXX;TrustServerCertificate=True;",
 }
 
 Redis setting :
