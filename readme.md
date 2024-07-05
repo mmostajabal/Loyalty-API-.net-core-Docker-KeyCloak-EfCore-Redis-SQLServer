@@ -51,33 +51,30 @@ Update-Database
 **Run docker**
 please move to directory LoyaltyAPI
 run
-for building
-docker-compose  up  -- build
-for upping the services
-docker-compose  up
-for stopping
-docker-compose  down
-for start services
-docker-compose up -d
-Build the Docker image:
-docker build -t loyaltysystem
-Run the Docker container
-docker run -p 8080:80 loyaltysystem
+
+1. **for building** : docker-compose  up  -- build
+2. **for upping the services** : docker-compose  up
+3. **for stopping** : docker-compose  down
+4. **for start services** : docker-compose up -d
+5. **Build the Docker image**: docker build -t loyaltysystem
+6. **Run the Docker container**: docker run -p 8080:80 loyaltysystem
 
 ### Get Token
 
 **Postman**
 (http://localhost:8080/realms/master/protocol/openid-connect/token)
 in post man In body section mark x-www-form-urlencoded then add these keys :
-key : grant_type  value :client_credentials
-key : client_id  value: client idin keycloack(exapmle loyaltyapi)
-key : client_secret value: you can find in keycloack then client then credential tab
+1. key : grant_type  value :client_credentials
+2. key : client_id  value: client idin keycloack(exapmle loyaltyapi)
+3. key : client_secret value: you can find in keycloack then client then credential tab
 
 **Command Prompt**
 you can get token in command prompt by using this command
+
 curl -X POST http://localhost:8080/realms/master/protocol/openid-connect/token -H "Content-Type: application/x-www-form-urlencoded" -d "client_id=LoyaltyAPI_Net" -d "client_secret=XXXXX" -d "grant_type=client_credentials"
 
 see all the usefull links for keyCloack
+
 -[usefull keycloack](http://localhost:8080/realms/master/.well-known/openid-configuration)
 
 ## End Point
