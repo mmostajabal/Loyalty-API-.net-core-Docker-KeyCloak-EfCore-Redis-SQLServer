@@ -1,4 +1,4 @@
-# Loyalty System API
+# Loyalty API
 
 This project is a simple loyalty system API developed using .NET Core. It allows users to earn points. The project includes several functionalities such as logging with Serilog, database access with Entity Framework Core (EFCore), request validation with FluentValidation, authentication with OAuth2, caching with Redis, unit testing with XUnit and Moq, and containerization with Docker.
 
