@@ -56,8 +56,8 @@ run
 2. **up the service** : docker-compose  up
 3. **stop** : docker-compose  down
 4. **start services** : docker-compose up -d
-5. **Build the Docker image**: docker build -t loyaltysystem
-6. **Run the Docker container**: docker run -p 8080:80 loyaltysystem
+5. **Build the Docker image**: docker build -t Loyalty
+6. **Run the Docker container**: docker run -p 8080:80 Loyalty
 
 ### Get Token
 
