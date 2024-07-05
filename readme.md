@@ -75,7 +75,7 @@ key : client_secret value: you can find in keycloack then client then credential
 
 **Command Prompt**
 you can get token in command prompt by using this command
-curl -X POST "<http://localhost:8080/realms/master/protocol/openid-connect/token>" -H "Content-Type: application/x-www-form-urlencoded" -d "client_id=LoyaltyAPI_Net" -d "client_secret=41BI3YXDFWvWcQNEJ6W0lopyiDyVV7Bp" -d "grant_type=client_credentials"
+curl -X POST http://localhost:8080/realms/master/protocol/openid-connect/token -H "Content-Type: application/x-www-form-urlencoded" -d "client_id=LoyaltyAPI_Net" -d "client_secret=41BI3YXDFWvWcQNEJ6W0lopyiDyVV7Bp" -d "grant_type=client_credentials"
 
 see all the usefull links for keyCloack
 -[usefull keycloack](http://localhost:8080/realms/master/.well-known/openid-configuration)
