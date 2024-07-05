@@ -52,10 +52,10 @@ Update-Database
 please move to directory LoyaltyAPI
 run
 
-1. **for building** : docker-compose  up  -- build
-2. **for upping the services** : docker-compose  up
-3. **for stopping** : docker-compose  down
-4. **for start services** : docker-compose up -d
+1. **build** : docker-compose  up  -- build
+2. **up the service** : docker-compose  up
+3. **stop** : docker-compose  down
+4. **start services** : docker-compose up -d
 5. **Build the Docker image**: docker build -t loyaltysystem
 6. **Run the Docker container**: docker run -p 8080:80 loyaltysystem
 
