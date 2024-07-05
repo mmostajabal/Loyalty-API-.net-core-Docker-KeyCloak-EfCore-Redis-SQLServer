@@ -66,7 +66,8 @@ docker run -p 8080:80 loyaltysystem
 
 ### Get Token
 
--[Postman](http://localhost:8080/realms/master/protocol/openid-connect/token)
+**Postman**
+(http://localhost:8080/realms/master/protocol/openid-connect/token)
 in post man In body section mark x-www-form-urlencoded then add these keys :
 key : grant_type  value :client_credentials
 key : client_id  value: client idin keycloack(exapmle loyaltyapi)
