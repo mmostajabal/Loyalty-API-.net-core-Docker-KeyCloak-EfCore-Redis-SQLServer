@@ -45,8 +45,10 @@ Redis setting :
 }
 
 **database migrations:**
-Add-Migration InitialCreate
-Update-Database
+
+1. Add-Migration InitialCreate
+
+2. Update-Database
 
 **Run docker**
 please move to directory LoyaltyAPI
